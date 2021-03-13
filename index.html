@@ -1,593 +1,788 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>App micron</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<link rel="stylesheet" type="text/css" href="css/animate.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css">
-<link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
-<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
-<link rel="stylesheet" type="text/css" href="css/light-color.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lifetrakr</title>
+  
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Themefisher Font -->  
+  <link href="plugins/themefisher-font/style.css" rel="stylesheet">
+  <!-- Slick Carousel -->
+  <link href="plugins/slick/slick.css" rel="stylesheet">
+  <!-- Slick Carousel Theme -->
+  <link href="plugins/slick/slick-theme.css" rel="stylesheet">
+  
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link href="images/favicon.png" rel="shortcut icon">
+
 </head>
 
-
-<body>
-
+<body class="body-wrapper">
 
 
-	<div class="wrapper">
+<nav class="navbar main-nav fixed-top navbar-expand-lg">
+  <div class="container">
+      <a class="navbar-brand" href="homepage.html"><img src="images/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="tf-ion-android-menu"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#feature">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#team">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#contact">Contact</a>
+        </li>
+      </ul>
+      </div>
+  </div>
+</nav>
+<!--=====================================
+=            Homepage Banner            =
+======================================-->
 
-		<div class="overlay"></div>
-		<div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
-
-		<header>
-			<div class="custom-container">
-				<div class="header-data">
-					<div class="logo">
-						<a href="#" title=""><img src="images/logo.png" alt=""></a>
-					</div>
-					<div class="mobile-menu-btn">
-						<a href="#" title=""><i class="fa fa-bars"></i></a>
-					</div><!-- mobile-menu-btn end-->
-					<div class="up-social-links">
-						<ul>
-							<li><a href="#" title=""><i class="mdi mdi-facebook"></i></a></li>
-							<li><a href="#" title=""><i class="mdi mdi-twitter"></i></a></li>
-							<li><a href="#" title=""><i class="mdi mdi-instagram"></i></a></li>
+<section class="banner bg-1" id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 align-self-center">
+				<!-- Contents -->
+				<div class="content-block">
+					<h1>Amazing App Best for business</h1>
+					<h5>Let you track everything in your life with a simple way</h5>
+					<!-- App Badge -->
+					<div class="app-badge">
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a href="#"><img class="img-fluid" src="images/app-badge/google-play.png" alt="google-play"></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#"><img class="img-fluid" src="images/app-badge/app-store.png" alt="app-store"></a>
+							</li>
 						</ul>
 					</div>
-					<nav>
-						<ul>
-							<li><a href="#features" title="">Features</a></li>
-							<li><a href="#about" title="">About</a></li>
-							<li><a href="#services" title="">Services</a></li>
-							<li><a href="#pricing" title="">Pricing</a></li>
-							<li><a href="#testimonial" title="">Testimonials</a></li>
-							<li><a href="#news" title="">News</a></li>
-						</ul>
-					</nav>
-				</div><!--header-data end-->
+				</div>
 			</div>
-		</header><!--header end-->
+			<div class="col-md-4">
+				<!-- App Image -->
+				<div class="image-block">
+					<img class="img-fluid" src="images/phones/iphone-banner.png" alt="iphone-banner">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-		<div class="responsive-mobile-menu">
-			<span class="close-menu"><i class="mdi mdi-close"></i></span>
-			<div class="mobile-menu">
-				<ul>
-					<li><a href="#features" title="">Features</a></li>
-					<li><a href="#about" title="">About</a></li>
-					<li><a href="#services" title="">Services</a></li>
-					<li><a href="#pricing" title="">Pricing</a></li>
-					<li><a href="#testimonial" title="">Testimonials</a></li>
-					<li><a href="#news" title="">News</a></li>
+<!--====  End of Homepage Banner  ====-->
+
+<!--===========================
+=            About            =
+============================-->
+
+<section class="about section bg-2" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 mr-auto">
+				<!-- Image Content -->
+				<div class="image-block">
+					<img src="images/phones/iphone-feature.png" alt="iphone-feature" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-10 m-md-auto align-self-center ml-auto">
+				<div class="about-block">
+					<!-- About 01 -->
+					<div class="about-item">
+						<div class="icon">
+							<i class="tf-ion-ios-paper-outline"></i>
+						</div>
+						<div class="content">
+							<h5>Creative Design</h5>
+							<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete accounta</p>
+						</div>
+					</div>
+					<!-- About 02 -->
+					<div class="about-item active">
+						<div class="icon">
+							<i class="tf-globe"></i>
+						</div>
+						<div class="content">
+							<h5>Easy to Use</h5>
+							<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete accounta</p>
+						</div>
+					</div>
+					<!-- About 03 -->
+					<div class="about-item">
+						<div class="icon">
+							<i class="tf-circle-compass"></i>
+						</div>
+						<div class="content">
+							<h5>Best User Experience</h5>
+							<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete accounta</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of About  ====-->
+
+<!--==============================
+=            Features            =
+===============================-->
+
+<section class="section feature" id="feature">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h2>App Features</h2>
+					<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee idea of denouncing pleasure and praising</p>
+				</div>
+			</div>
+		</div>
+		<div class="row bg-elipse">
+			<div class="col-lg-4 align-self-center text-center text-lg-right">
+				<!-- Feature Item -->
+				<div class="feature-item">
+					<!-- Icon -->
+					<div class="icon">
+						<i class="tf-circle-compass"></i>
+					</div>
+					<!-- Content -->
+					<div class="content">
+						<h5>Beautiful Interface Design</h5>
+						<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising</p>
+					</div>
+				</div>
+				<!-- Feature Item -->
+				<div class="feature-item">
+					<!-- Icon -->
+					<div class="icon">
+						<i class="tf-tools-2"></i>
+					</div>
+					<!-- Content -->
+					<div class="content">
+						<h5>Unlimited Features</h5>
+						<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 text-center">
+				<!-- Feature Item -->
+				<div class="feature-item mb-0">
+					<!-- Icon -->
+					<div class="icon">
+						<i class="tf-chat"></i>
+					</div>
+					<!-- Content -->
+					<div class="content">
+						<h5>Full free chat</h5>
+						<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising</p>
+					</div>
+				</div>
+				<div class="app-screen">
+					<img class="img-fluid" src="images/phones/i-phone-screen.png" alt="app-screen">
+				</div>
+				<!-- Feature Item -->
+				<div class="feature-item">
+					<!-- Icon -->
+					<div class="icon">
+						<i class="tf-hourglass"></i>
+					</div>
+					<!-- Content -->
+					<div class="content">
+						<h5>24/7 support by real people</h5>
+						<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 text-center text-lg-left align-self-center">
+				<!-- Feature Item -->
+				<div class="feature-item">
+					<!-- Icon -->
+					<div class="icon">
+						<i class="tf-mobile"></i>
+					</div>
+					<!-- Content -->
+					<div class="content">
+						<h5>Retina ready greaphics</h5>
+						<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising</p>
+					</div>
+				</div>
+				<!-- Feature Item -->
+				<div class="feature-item">
+					<!-- Icon -->
+					<div class="icon">
+						<i class="tf-layers"></i>
+					</div>
+					<!-- Content -->
+					<div class="content">
+						<h5>IOS & android version </h5>
+						<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Features  ====-->
+
+<!--=================================
+=            Promo Video            =
+==================================-->
+
+<section class="section promo-video bg-3 overlay">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- Promo Video -->
+				<div class="video">
+					<img class="img-fluid" src="images/backgrounds/promo-video-bg.jpg" alt="video-thumbnail">
+					<div class="video-button video-box">
+						<!-- Video Play Button -->
+						<a href="javascript:void(0)">
+							<span class="icon" data-video="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1">
+								<i class="tf-ion-ios-play-outline"></i>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Promo Video  ====-->
+
+<!--===================================
+=            Pricing Table            =
+====================================-->
+
+<section class="pricing section bg-shape" id="pricing">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h2>Choose Your Subscription Plan</h2>
+					<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee idea of denouncing pleasure and praising</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<!-- Pricing Table -->
+<div class="pricing-table text-center">	
+	<!-- Title -->
+	<div class="title">	
+		<h5>Free</h5>
+	</div>
+	<!-- Price Tag -->
+	<div class="price">	
+		<p>$0<span>/month</span></p>
+	</div>
+	<!-- Features -->
+	<ul class="feature-list">
+		<li>Android App</li>
+		<li>One time payment</li>
+		<li>Build & Publish</li>
+		<li>Life time support</li>
+	</ul>
+	<!-- Take Action -->
+	<div class="action-button">
+		<a href="" class="btn btn-main-rounded">Start Now</a>
+	</div>
+</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<!-- Pricing Table -->
+<div class="pricing-table featured text-center">	
+	<!-- Title -->
+	<div class="title">	
+		<h5>Basic</h5>
+	</div>
+	<!-- Price Tag -->
+	<div class="price">	
+		<p>$19<span>/month</span></p>
+	</div>
+	<!-- Features -->
+	<ul class="feature-list">
+		<li>Android App</li>
+		<li>One time payment</li>
+		<li>Build & Publish</li>
+		<li>Life time support</li>
+	</ul>
+	<!-- Take Action -->
+	<div class="action-button">
+		<a href="" class="btn btn-main-rounded">Start Now</a>
+	</div>
+</div>
+			</div>
+			<div class="col-lg-4 col-md-6 m-md-auto">
+				<!-- Pricing Table -->
+<div class="pricing-table text-center">	
+	<!-- Title -->
+	<div class="title">	
+		<h5>Advance</h5>
+	</div>
+	<!-- Price Tag -->
+	<div class="price">	
+		<p>$99<span>/month</span></p>
+	</div>
+	<!-- Features -->
+	<ul class="feature-list">
+		<li>Android App</li>
+		<li>One time payment</li>
+		<li>Build & Publish</li>
+		<li>Life time support</li>
+	</ul>
+	<!-- Take Action -->
+	<div class="action-button">
+		<a href="" class="btn btn-main-rounded">Start Now</a>
+	</div>
+</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Pricing Table  ====-->
+
+<!--=============================================
+=            Call to Action Download            =
+==============================================-->
+
+<section class="cta-download bg-3 overlay">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5">
+				<div class="image-block"><img class="img-fluid" src="images/phones/iphone-chat.png" alt=""></div>
+			</div>
+			<div class="col-lg-7">
+				<div class="content-block">
+					<!-- Title -->
+					<h2>Free Download Now</h2>
+					<!-- Desctcription -->
+					<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee idea of denouncing pleasure and praising</p>
+					<!-- App Badge -->
+					<div class="app-badge">
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a href="#"><img class="img-fluid" src="images/app-badge/google-play.png" alt="google-play"></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#"><img class="img-fluid" src="images/app-badge/app-store.png" alt="app-store"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Call to Action Download  ====-->
+
+<!--=============================
+=            Counter            =
+==============================-->
+
+<section class="section counter bg-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<div class="counter-item">
+					<!-- Counter Number -->
+					<h3>29k</h3>
+					<!-- Counter Name -->
+					<p>Download</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="counter-item">
+					<!-- Counter Number -->
+					<h3>200k</h3>
+					<!-- Counter Name -->
+					<p>Active Account</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="counter-item">
+					<!-- Counter Number -->
+					<h3>60k</h3>
+					<!-- Counter Name -->
+					<p>Happy User</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="counter-item">
+					<!-- Counter Number -->
+					<h3>300k<sup>+</sup></h3>
+					<!-- Counter Name -->
+					<p>Download</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Counter  ====-->
+
+<!--==========================
+=            Team            =
+===========================-->
+
+<section class="section team bg-shape-two" id="team">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h2>Our Creative Team</h2>
+					<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee idea of denouncing pleasure and praising</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<!-- Team Member -->
+<div class="team-member text-center">
+	<div class="image">
+		<img class="img-fluid" src="images/team/member-one.jpg" alt="team-member">
+	</div>
+	<div class="name">
+		<h5>Johnny Depp</h5>
+	</div>
+	<div class="position">
+		<p>Production Designer</p>
+	</div>
+	<div class="skill-bar">
+		<div class="progress" data-percent="85%">
+		  	<div class="progress-bar"></div>
+		</div>
+		<span>85%</span>
+	</div>
+	<ul class="social-icons list-inline">
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-facebook"></i></a>
+		</li>
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-twitter"></i></a>
+		</li>
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-linkedin"></i></a>
+		</li>
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-instagram-outline"></i></a>
+		</li>
+	</ul>
+</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<!-- Team Member -->
+<div class="team-member text-center">
+	<div class="image">
+		<img class="img-fluid" src="images/team/member-two.jpg" alt="team-member">
+	</div>
+	<div class="name">
+		<h5>cristin milioti</h5>
+	</div>
+	<div class="position">
+		<p>UX Researcher</p>
+	</div>
+	<div class="skill-bar">
+		<div class="progress" data-percent="95%">
+		  	<div class="progress-bar"></div>
+		</div>
+		<span>95%</span>
+	</div>
+	<ul class="social-icons list-inline">
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-facebook"></i></a>
+		</li>
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-twitter"></i></a>
+		</li>
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-linkedin"></i></a>
+		</li>
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-instagram-outline"></i></a>
+		</li>
+	</ul>
+</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<!-- Team Member -->
+<div class="team-member text-center">
+	<div class="image">
+		<img class="img-fluid" src="images/team/member-three.jpg" alt="team-member">
+	</div>
+	<div class="name">
+		<h5>john doe</h5>
+	</div>
+	<div class="position">
+		<p>Head of Ideas</p>
+	</div>
+	<div class="skill-bar">
+		<div class="progress" data-percent="80%">
+		  	<div class="progress-bar"></div>
+		</div>
+		<span>80%</span>
+	</div>
+	<ul class="social-icons list-inline">
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-facebook"></i></a>
+		</li>
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-twitter"></i></a>
+		</li>
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-linkedin"></i></a>
+		</li>
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-instagram-outline"></i></a>
+		</li>
+	</ul>
+</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<!-- Team Member -->
+<div class="team-member text-center">
+	<div class="image">
+		<img class="img-fluid" src="images/team/member-four.jpg" alt="team-member">
+	</div>
+	<div class="name">
+		<h5>mario gotze</h5>
+	</div>
+	<div class="position">
+		<p>UX/UI designer</p>
+	</div>
+	<div class="skill-bar">
+		<div class="progress" data-percent="75%">
+		  	<div class="progress-bar"></div>
+		</div>
+		<span>75%</span>
+	</div>
+	<ul class="social-icons list-inline">
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-facebook"></i></a>
+		</li>
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-twitter"></i></a>
+		</li>
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-linkedin"></i></a>
+		</li>
+		<li class="list-inline-item">
+			<a href=""><i class="tf-ion-social-instagram-outline"></i></a>
+		</li>
+	</ul>
+</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Team  ====-->
+
+<!--=================================
+=            Testimonial            =
+==================================-->
+
+<section class="section testimonial bg-primary-shape" id="testimonial">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h2 class="text-white">Our Happy Customers</h2>
+					<p class="text-white">Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee idea of denouncing pleasure and praising</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 m-auto">
+				<!-- Testimonial Carosel -->
+<div class="testimonial-slider">
+	<!-- testimonial item -->
+	<div class="testimonial-item">
+		<div class="content">
+			<div class="name">
+				<h5>Kris lazy Cistin Miloti</h5>
+			</div>
+			<div class="pos-in-com">
+				<p>CEO at <span>Themefisher</span></p>
+			</div>
+			<div class="speech">
+				<p>Explain to you how all this mistaken idea of denouncing tis pleasure and praising pain was born and I will give you a complete praising the account is account the. </p>
+			</div>
+			<ul class="rating list-inline">
+				<li class="list-inline-item">
+					<i class="tf-ion-android-star"></i>
+					<i class="tf-ion-android-star"></i>
+					<i class="tf-ion-android-star"></i>
+					<i class="tf-ion-android-star"></i>
+					<i class="tf-ion-android-star"></i>
+				</li>
+			</ul>		</div>
+		<div class="image">
+			<img class="img-fluid" src="images/testimonial/review-person-one.png" alt="testimonial-person">
+		</div>
+	</div>
+	<!-- testimonial item -->
+	<div class="testimonial-item">
+		<div class="content">
+			<div class="name">
+				<h5>Kris lazy Cistin Miloti</h5>
+			</div>
+			<div class="pos-in-com">
+				<p>CEO at<span>Themefisher</span></p>
+			</div>
+			<div class="speech">
+				<p>Explain to you how all this mistaken idea of denouncing tis pleasure and praising pain was born and I will give you a complete praising the account is account the. </p>
+			</div>
+			<div class="rating">
+				<ul class="rating list-inline">
+					<li class="list-inline-item">
+						<i class="tf-ion-android-star"></i>
+						<i class="tf-ion-android-star"></i>
+						<i class="tf-ion-android-star"></i>
+						<i class="tf-ion-android-star"></i>
+						<i class="tf-ion-android-star"></i>
+					</li>
 				</ul>
-			</div><!--mobile-menu end-->
-			<ul class="mb-social-links">
-				<li><a href="#" title=""><i class="mdi mdi-facebook"></i></a></li>
-				<li><a href="#" title=""><i class="mdi mdi-twitter"></i></a></li>
-				<li><a href="#" title=""><i class="mdi mdi-instagram"></i></a></li>
-			</ul><!--mb-social-links end-->
-			<div class="mb-copyright-text">
-				<p>© AppMicron 2018. All Rights Reseverd Design by Paul Murren</p>
-			</div><!--mb-copyright-text end-->
-		</div><!--responsive-mobile-menu end-->
+			</div>
+		</div>
+		<div class="image">
+			<img class="img-fluid" src="images/testimonial/review-person-one.png" alt="testimonial-person">
+		</div>
+	</div>
+</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
-		
-		<section class="main-section">
-			<div class="custom-container">
-				<div class="main-section-data">
-					<div class="row">
-						<div class="col-lg-5">
-							<div class="banner-text">
-								<h3>Introducing</h3>
-								<h2>APPMicron</h2>
-								<p>Ut non quam risus. Praesent venenatis ali- <br />quam rhoncus. Mauris sit amet rhoncus risus,<br /> vel ullamcorper leo.</p>
-								<a href="#" title="">explore</a>
-							</div><!--banner-text end-->
-						</div>
-						<div class="col-lg-6">
-							<div class="banner-imgs">
-								<img src="http://via.placeholder.com/826x949" alt="">
-							</div><!--banner-imgs end-->
-						</div>
+<!--====  End of Testimonial  ====-->
+
+<section class="section cta-subscribe" id="contact">
+	<div class="container">
+		<div class="row bg-elipse-red">
+			<div class="col-lg-4">
+				<div class="image"><img src="images/phones/iphone-banner.png" alt="iphone-app"></div>
+			</div>
+			<div class="col-lg-8 align-self-center">
+				<div class="content">
+					<div class="title">
+						<h2>Subscribe Our Newsletter</h2>
 					</div>
-				</div><!--main-section-data end-->
-			</div>
-		</section>
-
-
-	    <section class="features" id="features">
-	    	<div class="custom-container">
-	    		<div class="features-sec">
-	    			<div class="row">
-	    				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-	    					<div class="feature">
-	    						<div class="feature-icon">
-	    							<span><i class="mdi mdi-account-convert"></i></span>
-	    						</div><!--feature-icon end-->
-	    						<div class="feature-info">
-	    							<h3>Account Convert</h3>
-	    							<p>Maecenas ante sapien, semper nec ullamcorper a, tristique ac dolor.</p>
-	    						</div><!--feature-info end-->
-	    					</div><!--feature end-->
-	    				</div>
-	    				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-	    					<div class="feature">
-	    						<div class="feature-icon">
-	    							<span><i class="mdi mdi-alarm-check"></i></span>
-	    						</div><!--feature-icon end-->
-	    						<div class="feature-info">
-	    							<h3>Allarm Bell</h3>
-	    							<p>Maecenas ante sapien, semper nec ullamcorper a, tristique ac dolor.</p>
-	    						</div><!--feature-info end-->
-	    					</div><!--feature end-->
-	    				</div>
-	    				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-	    					<div class="feature">
-	    						<div class="feature-icon">
-	    							<span><i class="mdi mdi-android"></i></span>
-	    						</div><!--feature-icon end-->
-	    						<div class="feature-info">
-	    							<h3>Android</h3>
-	    							<p>Maecenas ante sapien, semper nec ullamcorper a, tristique ac dolor.</p>
-	    						</div><!--feature-info end-->
-	    					</div><!--feature end-->
-	    				</div>
-	    				<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-	    					<div class="feature">
-	    						<div class="feature-icon">
-	    							<span><i class="mdi mdi-apple"></i></span>
-	    						</div><!--feature-icon end-->
-	    						<div class="feature-info">
-	    							<h3>iOS</h3>
-	    							<p>Maecenas ante sapien, semper nec ullamcorper a, tristique ac dolor.</p>
-	    						</div><!--feature-info end-->
-	    					</div><!--feature end-->
-	    				</div>
-	    			</div>
-	    		</div><!--features-sec end-->
-	    	</div>
-	    </section>
-
-	    <section class="about" id="about">
-	    	<div class="fixed-bg bg3"></div>
-	    	<div class="custom-container">
-	    		<div class="about-sec">
-	    			<div class="row">
-	    				<div class="col-lg-4">
-	    					<div class="about-img">
-	    						<img src="http://via.placeholder.com/486x854" alt="">
-	    					</div><!--srvc-img end-->
-	    				</div>
-	    				<div class="col-lg-8">
-	    					<div class="about-list">
-	    						<div class="about-info">
-	    							<div class="about-num">
-	    								<span>01.</span>
-	    							</div><!--service-num end-->
-	    							<div class="abt-info">
-	    								<h3>Simple & easy</h3>
-	    								<p>Sed non ipsum ultricies, vestibulum sapien at, tincidunt enim. Sed porttitor dui et ligula rhoncus hendrerit. Duis sodales varius justo at hendrerit. Cras vestibulum quam a justo convallis, nec vulputate purus ullamcorper.</p>
-	    							</div><!--srvc-info end-->
-	    						</div><!--service-info end-->
-	    						<div class="about-info">
-	    							<div class="about-num st2">
-	    								<span>02.</span>
-	    							</div><!--service-num end-->
-	    							<div class="abt-info">
-	    								<h3>Powerfull</h3>
-	    								<p>Sed non ipsum ultricies, vestibulum sapien at, tincidunt enim. Sed porttitor dui et ligula rhoncus hendrerit. Duis sodales varius justo at hendrerit. Cras vestibulum quam a justo convallis, nec vulputate purus ullamcorper.</p>
-	    							</div><!--srvc-info end-->
-	    						</div><!--service-info end-->
-	    						<div class="about-info">
-	    							<div class="about-num st3">
-	    								<span>03.</span>
-	    							</div><!--service-num end-->
-	    							<div class="abt-info">
-	    								<h3>Deliver Results</h3>
-	    								<p>Sed non ipsum ultricies, vestibulum sapien at, tincidunt enim. Sed porttitor dui et ligula rhoncus hendrerit. Duis sodales varius justo at hendrerit. Cras vestibulum quam a justo convallis, nec vulputate purus ullamcorper.</p>
-	    							</div><!--srvc-info end-->
-	    						</div><!--service-info end-->
-	    						<a href="#" title="">get started</a>
-	    					</div><!--services-list end-->
-	    				</div>
-	    			</div>
-	    		</div><!--services-sec end-->
-	    	</div>
-	    </section>
-
-
-	    <section class="services" id="services">
-	    	<div class="fixed-bg bg4"></div>
-	    	<div class="custom-container">
-	    		<div class="services-sec">
-	    			<div class="row">
-	    				<div class="col-lg-4 no-pd">
-	    					<div class="services-list">
-	    						<div class="service-details">
-	    							<span><i class="mdi mdi-checkbox-marked-circle-outline"></i></span>
-	    							<div class="service-info">
-	    								<h3>Morbi purus diam</h3>
-	    								<p>In ipsum nisl, congue et diam eu, suscipit pulvinar nisl. Suspendisse accumsan ultricies mi gravida hendrerit. </p>
-	    							</div><!--service-info end-->
-	    						</div><!--service-details end-->
-	    						<div class="service-details">
-	    							<span><i class="mdi mdi-checkbox-marked-circle-outline"></i></span>
-	    							<div class="service-info">
-	    								<h3>Vestibulum sceleri</h3>
-	    								<p>In ipsum nisl, congue et diam eu, suscipit pulvinar nisl. Suspendisse accumsan ultricies mi gravida hendrerit. </p>
-	    							</div><!--service-info end-->
-	    						</div><!--service-details end-->
-	    						<div class="service-details">
-	    							<span><i class="mdi mdi-checkbox-marked-circle-outline"></i></span>
-	    							<div class="service-info">
-	    								<h3>Morbi purus diam</h3>
-	    								<p>In ipsum nisl, congue et diam eu, suscipit pulvinar nisl. Suspendisse accumsan ultricies mi gravida hendrerit. </p>
-	    							</div><!--service-info end-->
-	    						</div><!--service-details end-->
-	    						<div class="service-details">
-	    							<span><i class="mdi mdi-checkbox-marked-circle-outline"></i></span>
-	    							<div class="service-info">
-	    								<h3>Vestibulum sceleri</h3>
-	    								<p>In ipsum nisl, congue et diam eu, suscipit pulvinar nisl. Suspendisse accumsan ultricies mi gravida hendrerit. </p>
-	    							</div><!--service-info end-->
-	    						</div><!--service-details end-->
-	    					</div><!--services-list end-->
-	    				</div>
-	    				<div class="col-lg-8">
-	    					<div class="main-srv-sec">
-		    					<div class="service-img">
-		    						<img src="http://via.placeholder.com/589x717" alt="">
-		    						<a href="https://www.youtube.com/watch?v=0ZzE6JLChEQ" title="" class="html5lightbox"><img src="images/play.png" alt=""></a>
-		    					</div><!--service-img end-->
-		    					<div class="service-main-info">
-		    						<h3>It’s easier than ease. </h3>
-		    						<p>Morbi posuere aliquet ante, nec mollis mi bibendum vestibulum. Mauris dapibus tortor mi, in posuere augue dapibus id. Aliquam sed justo et ante ullamcorper vestibulum. Nullam vitae mi dui. Nullam urna enim, dapibus at diam eu, commodo bibendum metus. Fusce interdum non augue et consequat. Ut vel nisi eu nunc tincidunt volutpat et eu massa. Praesent sit amet egestas nulla, vitae elementum tortor.</p>
-		    					</div><!--service-main-info end-->
-	    					</div><!--main-srv-sec end-->
-	    				</div>
-	    			</div>
-	    		</div><!--services-sec end-->
-	    	</div>
-	    </section>
-
-
-	    <section class="pricing" id="pricing">
-	    	<div class="fixed-bg bg5"></div>
-	    	<div class="custom-container">
-	    		<div class="heading st2">
-	    			<h3>Pick Your Plan</h3>
-	    		</div><!--heading end-->
-	    		<div class="pricing-plan">
-	    			<div class="row">
-	    				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-	    					<div class="price">
-	    						<div class="price-head">
-	    							<h4>Startup</h4>
-	    							<ul>
-	    								<li>
-	    									<h3><span>$</span>19</h3>
-	    								</li>
-	    								<li>
-	    									<span>99</span>
-	    									<b>/ mo .</b>
-	    								</li>
-	    							</ul>
-	    						</div><!--price-head end-->
-	    						<p>Computer manufacturer Lenovo is in hot water this week after pre-installing. software that tracks your Internet activity to</p>
-	    						<a href="#" title="">get started</a>
-	    					</div><!--price end-->
-	    				</div>
-	    				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-	    					<div class="price">
-	    						<div class="price-head">
-	    							<h4>Growth</h4>
-	    							<ul>
-	    								<li>
-	    									<h3><span>$</span>29</h3>
-	    								</li>
-	    								<li>
-	    									<span>99</span>
-	    									<b>/ mo .</b>
-	    								</li>
-	    							</ul>
-	    						</div><!--price-head end-->
-	    						<p>Computer manufacturer Lenovo is in hot water this week after pre-installing. software that tracks your Internet activity to</p>
-	    						<a href="#" title="">get started</a>
-	    					</div><!--price end-->
-	    				</div>
-	    				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-	    					<div class="price">
-	    						<div class="price-head">
-	    							<h4>premium</h4>
-	    							<ul>
-	    								<li>
-	    									<h3><span>$</span>59</h3>
-	    								</li>
-	    								<li>
-	    									<span>99</span>
-	    									<b>/ mo .</b>
-	    								</li>
-	    							</ul>
-	    						</div><!--price-head end-->
-	    						<p>Computer manufacturer Lenovo is in hot water this week after pre-installing. software that tracks your Internet activity to</p>
-	    						<a href="#" title="">get started</a>
-	    					</div><!--price end-->
-	    				</div>
-	    				<div class="col-lg-3 col-md-6 col-sm-6 col-12">
-	    					<div class="price">
-	    						<div class="price-head">
-	    							<h4>Enterprise</h4>
-	    							<ul>
-	    								<li>
-	    									<h3><span>$</span>99</h3>
-	    								</li>
-	    								<li>
-	    									<span>99</span>
-	    									<b>/ mo .</b>
-	    								</li>
-	    							</ul>
-	    						</div><!--price-head end-->
-	    						<p>Computer manufacturer Lenovo is in hot water this week after pre-installing. software that tracks your Internet activity to</p>
-	    						<a href="#" title="">get started</a>
-	    					</div><!--price end-->
-	    				</div>
-	    			</div>
-	    		</div><!--pricing-plan end-->
-	    	</div>
-	    </section>
-
-		<section class="testimonial" id="testimonial">
-			<div class="custom-container">
-				<div class="testimonial-slider">
-					<div class="user-comment">
-						<p>Vestibulum scelerisque, sapien eu sollicitudin molestie, ex purus malesuada tortor, id rutrum mauris ipsum at est. Vivamus lacus leo, ultrices sit amet ex id, maximus imperdiet lorem.</p>
-					</div><!--user-comment end-->
-					<div class="user-comment">
-						<p>Vestibulum scelerisque, sapien eu sollicitudin molestie, ex purus malesuada tortor, id rutrum mauris ipsum at est. Vivamus lacus leo, cibus. Nam dignissim neque ut neque pretium, id posuere dui fringilla. </p>
-					</div><!--user-comment end-->
-					<div class="user-comment">
-						<p>Vestibulum scelerisqus leo, faucibus. Nam dignissim neque ut neque pretium, id posuere dui fringilla. </p>
-					</div><!--user-comment end-->
-					<div class="user-comment">
-						<p>Vestibulum scelerisque, sapien eu solliit amet ex id, maximus imperdiet lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam dignissim neque ut neque pretium, id posuere dui fringilla. </p>
-					</div><!--user-comment end-->
-				</div>
-				<div class="testimonial-nav">
-					<div class="user-info">
-						<img src="http://via.placeholder.com/65x65" alt="">
-						<h3>Omar Hampton</h3>
-						<span>Designer</span>
-					</div><!--user-info end-->
-					<div class="user-info">
-						<img src="http://via.placeholder.com/65x65" alt="">
-						<h3>Omar Hampton</h3>
-						<span>Designer</span>
-					</div><!--user-info end-->
-					<div class="user-info">
-						<img src="http://via.placeholder.com/65x65" alt="">
-						<h3>Omar Hampton</h3>
-						<span>Designer</span>
-					</div><!--user-info end-->
-					<div class="user-info">
-						<img src="http://via.placeholder.com/65x65" alt="">
-						<h3>Omar Hampton</h3>
-						<span>Designer</span>
-					</div><!--user-info end-->
-					<div class="user-info">
-						<img src="http://via.placeholder.com/65x65" alt="">
-						<h3>Omar Hampton</h3>
-						<span>Designer</span>
-					</div><!--user-info end-->
-					<div class="user-info">
-						<img src="http://via.placeholder.com/65x65" alt="">
-						<h3>Omar Hampton</h3>
-						<span>Designer</span>
-					</div><!--user-info end-->
-					<div class="user-info">
-						<img src="http://via.placeholder.com/65x65" alt="">
-						<h3>Omar Hampton</h3>
-						<span>Designer</span>
-					</div><!--user-info end-->
-					<div class="user-info">
-						<img src="http://via.placeholder.com/65x65" alt="">
-						<h3>Omar Hampton</h3>
-						<span>Designer</span>
-					</div><!--user-info end-->
-					<div class="user-info">
-						<img src="http://via.placeholder.com/65x65" alt="">
-						<h3>Omar Hampton</h3>
-						<span>Designer</span>
-					</div><!--user-info end-->
-					<div class="user-info">
-						<img src="http://via.placeholder.com/65x65" alt="">
-						<h3>Omar Hampton</h3>
-						<span>Designer</span>
-					</div><!--user-info end-->
-				</div><!--testimonial-nav end-->
-			</div>
-		</section>
-
-		<section class="news" id="news">
-			<div class="fixed-bg bg6"></div>
-			<div class="custom-container">
-				<div class="heading">
-					<h3>Our Latest News</h3>
-				</div><!--heading end-->
-				<div class="blog-posts">
-					<div class="row">
-						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
-							<div class="blog-post">
-								<div class="blog-img">
-									<img src="http://via.placeholder.com/450x319" alt="">
-								</div><!--blog-img end-->
-								<div class="blog-info">
-									<h3><a href="#" title="">Politicians seek </a></h3>
-									<ul class="blog-catgs">
-										<li><a href="#" title="">#android</a></li>
-										<li><a href="#" title="">#application</a></li>
-										<li><a href="#" title="">#modern    </a></li>
-									</ul>
-									<ul class="cms-links">
-										<li><img src="images/ct-icon1.png" alt="">27</li>
-										<li><img src="images/ct-icon2.png" alt="">343</li>
-									</ul>
-								</div><!--blog-info end-->
-							</div><!--blog-post end-->
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
-							<div class="blog-post">
-								<div class="blog-img">
-									<img src="http://via.placeholder.com/450x319" alt="">
-								</div><!--blog-img end-->
-								<div class="blog-info">
-									<h3><a href="#" title="">Feyerabend also </a></h3>
-									<ul class="blog-catgs">
-										<li><a href="#" title="">#android</a></li>
-										<li><a href="#" title="">#application</a></li>
-										<li><a href="#" title="">#modern    </a></li>
-									</ul>
-									<ul class="cms-links">
-										<li><img src="images/ct-icon1.png" alt="">27</li>
-										<li><img src="images/ct-icon2.png" alt="">343</li>
-									</ul>
-								</div><!--blog-info end-->
-							</div><!--blog-post end-->
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
-							<div class="blog-post">
-								<div class="blog-img">
-									<img src="http://via.placeholder.com/450x319" alt="">
-								</div><!--blog-img end-->
-								<div class="blog-info">
-									<h3><a href="#" title="">Proper science  </a></h3>
-									<ul class="blog-catgs">
-										<li><a href="#" title="">#android</a></li>
-										<li><a href="#" title="">#application</a></li>
-										<li><a href="#" title="">#modern    </a></li>
-									</ul>
-									<ul class="cms-links">
-										<li><img src="images/ct-icon1.png" alt="">27</li>
-										<li><img src="images/ct-icon2.png" alt="">343</li>
-									</ul>
-								</div><!--blog-info end-->
-							</div><!--blog-post end-->
-						</div>
+					<div class="description">
+						<p>Demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee idea of denouncing pleasure and praising</p>
 					</div>
-				</div><!--blog-posts end-->
-			</div>
-		</section>
-		
-
-		<section class="get-started">
-			<div class="custom-container">
-				<div class="wait-sec">
-					<h3>So What are You Waiting for?</h3>
-					<a href="#" title="">get started</a>
-				</div><!--wait-sec end-->
-			</div>
-		</section>			
-
-
-		<footer>
-			<div class="top-footer">
-				<div class="fixed-bg footer-bg"></div>
-				<div class="custom-container">
-					<div class="top-footer-data">
-						<div class="row">
-							<div class="col-lg-3 col-md-6">
-								<div class="widget widget-about">
-									<h3 class="widget-title">About</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-								</div><!--widget-about end-->
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="widget widget-contact">
-									<h3 class="widget-title">Contacts</h3>
-									<ul>
-										<li><span>Address: 4578 Marmora Road, Glasgow, D04 89GR</span></li>
-										<li><span>Phones: (800) 123-4567; (800) 123-4568</span></li>
-										<li><span>E-mail: office@appmicron.com</span></li>
-										<li><span>We are open: Mn-Fr: 10 am-8 pm</span></li>
-									</ul>
-								</div><!--widget-contact end-->
-							</div>
-							<div class="col-lg-6 col-md-12">
-								<div class="contact-form">
-									<form class="js-ajax-form">
-										<div class="row">
-											<div class="col-lg-6">
-												<input type="text" name="name" placeholder="Name" required>
-											</div>
-											<div class="col-lg-6">
-												<input type="text" name="email" placeholder="Email" required>
-											</div>
-											<div class="col-lg-12">
-												<textarea placeholder="Message" name="message"></textarea>
-											</div>
-											<div class="col-lg-12">
-												<button type="submit" class="btn-sbmt">Submit</button>
-											</div>
-											<div class="col-lg-12">
-						                    	<div class="form-group">
-							                        <div class="success-message">
-							                        	<i class="fa fa-check text-primary"></i> Thank you!. Your message is successfully sent...
-							                        </div>
-							                        <div class="error-message">We're sorry, but something went wrong
-							                        </div>
-						                      	</div>
-						                    </div>
-										</div>
-									</form>
-								</div><!--contact-form end-->
-							</div>
-						</div>
-					</div><!--top-footer-data end-->
+					<form action="#">
+						<div class="input-group">
+						    <input type="text" class="form-control main" placeholder="Enter your email address">
+						    <span class="input-group-addon tf-ion-android-send" id="btnGroupAddon"></span>
+						  </div>
+					</form>
+					<div class="subscription-tag text-right">
+						<p>Subscribe To Our Newsletter & Stay Updated</p>
+					</div>
 				</div>
-			</div><!--top-footer end-->
-			<div class="bottom-footer">
-				<div class="custom-container">
-					<div class="bottom-footer-data">
-						<p>APPMICRON Theme © 2018.</p>
-						<ul class="social-links">
-							<li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#" title=""><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#" title=""><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#" title=""><i class="fa fa-vimeo"></i></a></li>
-							<li><a href="#" title=""><i class="fa fa-youtube"></i></a></li>
-							<li><a href="#" title=""><i class="fa fa-pinterest"></i></a></li>
-						</ul>
-					</div><!-- bottom-footer-data end-->
-				</div>
-			</div><!--bottom-footer end-->
-		</footer>	
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--============================
+=            Footer            =
+=============================-->
+
+<footer class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mr-auto">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="footer-logo">
+          </div>
+          <div class="copyright">
+            <p>@2018 Themefisher All Rights Reserved  |  Design By : <a href="https://themefisher.com/" target="_blank">Themefisher</a>  Team
+              <br>Get More <a href="https://themewagon.com/theme_tag/free/" target="_blank">Free Bootstrap Templates</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 text-lg-right">
+          <!-- Social Icons -->
+          <ul class="social-icons list-inline">
+            <li class="list-inline-item">
+              <a href=""><i class="tf-ion-social-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href=""><i class="tf-ion-social-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href=""><i class="tf-ion-social-linkedin"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href=""><i class="tf-ion-social-instagram-outline"></i></a>
+            </li>
+          </ul>
+          <!-- Footer Links -->
+          <ul class="footer-links list-inline">
+            <li class="list-inline-item">
+              <a href="#">ABOUT</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">TEAM</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
 
 
-	</div><!--wrapper end-->	
 
+  <!-- JAVASCRIPTS -->
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA" async defer></script>
 
-
-
-
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/popper.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="lib/slick/slick.min.js"></script>
-<script type="text/javascript" src="js/html5lightbox.js"></script>
-<script type="text/javascript" src="js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="js/validator.js"></script>
-
-<script type="text/javascript" src="js/script.js"></script>
-
+  <script src="plugins/jquery/jquery.js"></script>
+  <script src="plugins/popper/popper.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="plugins/waypoints/jquery.waypoints.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+  <script src="js/custom.js"></script>
+  
 </body>
 
 </html>
+
