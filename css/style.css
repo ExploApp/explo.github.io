@@ -315,7 +315,7 @@ video:focus {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: normal;
   letter-spacing: 0.15px;
   color: #FFFFFF;
@@ -887,9 +887,26 @@ input:focus {
     margin-left: 1rem;
   }
 
-  .footer-text,
+  .footer {
+    font-size: 12px;
+    padding: 16px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .footer-text {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
   .footer-links {
-    gap: 2.5rem;
+    width: 100%;
+    padding: 0 56px;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .underline {
