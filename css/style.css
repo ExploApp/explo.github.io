@@ -230,7 +230,6 @@ video:focus {
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5rem;
   line-height: 120%;
   letter-spacing: 0.02em;
   font-weight: 600;
@@ -242,7 +241,6 @@ video:focus {
 .slick-vertical .slick-slide {
   margin: 0% !important;
 }
-
 
 .slick-slider {
   margin-bottom: 0% !important;
@@ -267,12 +265,11 @@ video:focus {
 
 .Slider {
   margin-left: 0.8rem;
-
 }
 
 .Slider div {
   font-size: 1.5rem;
-  line-height: 3rem;
+  line-height: 2rem;
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: 600;

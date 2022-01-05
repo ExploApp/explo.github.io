@@ -35,9 +35,9 @@ $('#explorer').on('click', function() {
   $('#explorer').addClass('active');
   $('.underline').removeClass('switch-tab') 
 
-  $('.text1').text("Live events.");
-  $('.text2').text(" Unique deals.");
-  $('.text3').text("Video-guided Experiences. ");
+  $('.text1').text("personal Recommendations.");
+  $('.text2').text("short-video Inspiration.");
+  $('.text3').text("smart digital Assistance.");
  
   $('.h3').css({ 'opacity': '1', 'height': 'auto' });
   $('.btn').html("book now")
